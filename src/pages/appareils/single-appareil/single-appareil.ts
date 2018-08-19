@@ -2,6 +2,7 @@ import { Component, OnInit  } from '@angular/core';
 import { NavController, NavParams, ViewController } from 'ionic-angular';
 import { Appareil } from '../../../models/Appareils';
 import { AppareilsService } from '../../../services/appareils.service';
+import { NgForm } from '../../../../node_modules/@angular/forms';
 
 @Component({
     selector: 'page-single-appareil',
@@ -30,6 +31,17 @@ appareil: Appareil;
     onToggleAppareil(){
         this.appareil.isOn = !this.appareil.isOn;
         console.log("lddsdd");
+    }
+
+    onSubmitForm(form: NgForm) {
+        console.log(form.value);
+        this.dismissModal();
+    }
+    
+    onDeleteHours() {
+        this.appareil.startTime = '';
+        this.appareil.endTime = '';
+        this.dismissModal();
     }
 
 }
