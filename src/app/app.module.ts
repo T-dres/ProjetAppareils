@@ -12,6 +12,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 import { AppareilsService } from '../services/appareils.service';
 import { OptionsPage } from '../pages/Options/options';
+import { AppareilFormPage } from '../pages/appareils/appareil-form/appareil-form';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { OptionsPage } from '../pages/Options/options';
     SingleAppareilPage,
     SettingsPage,
     TabsPage,
-    OptionsPage
+    OptionsPage,
+    AppareilFormPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { OptionsPage } from '../pages/Options/options';
     SingleAppareilPage,
     SettingsPage,
     TabsPage,
-    OptionsPage
+    OptionsPage,
+    AppareilFormPage
   ],
   providers: [
     StatusBar,

@@ -35,4 +35,8 @@ export class AppareilsService {
         }
       ];
 
+
+      addAppareil(appareil: Appareil){
+        this.appareilsList.push(appareil);
+      }
 }
